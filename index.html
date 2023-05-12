@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Management System</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <body>
+        <h1>User Registration Management System</h1>
+
+        <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="id-number">ID Number:</label>
+            <input type="text" id="id-number" name="id-number" required />
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+        <option value="">--Select Country--</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="Mexico">Mexico</option>
+      </select>
+
+            <label for="languages-spoken">Languages Spoken:</label>
+            <input type="text" id="languages-spoken" name="languages-spoken" />
+
+            <button type="submit" id="submit-btn">Register</button>
+        </form>
+
+        <table id="users-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID Number</th>
+                    <th>Country</th>
+                    <th>Languages Spoken</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
