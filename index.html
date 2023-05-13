@@ -5,49 +5,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Registration Management System</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script type="text/javascript" src="script.js"></script>
+    <title> User Reg</title>
+    <link rel="stylesheet" href="user text\css\styles.css">
+</head>
 
+<body>
+    <header class="header">
+        <h2 class="header__logo">JITU</h2>
+        <nav class="header__nav">
+            <ol class="header__nav-list">
+                <li class="header__nav-list--item"><a href="">Jitu</a></li>
+                <li class="header__nav-list--item"><a href="">Users</a></li>
+                <li class="header__nav-list--item"><a href="">Updater</a></li>
+                <li class="header__nav-list--item"><a href="">deletion</a></li>
+            </ol>
+        </nav>
+    </header>
+    <section class="body-main-form-table">
+        <div class="body__form">
+            <form action="">
+                <div class="form-group">
+                    <label for="username">
+                        username
+                    </label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="id-number">
+                        Id No.
+                    </label>
+                    <input type="number" name="id_number" id="id-number">
+                </div>
+                <div class="form-group">
+                    <label for="country">
+                        country
+                    </label>
+                    <select name="country" id="country">
+                        <option value="kenya">Italy</option>
+                        <option value="uganda">Germany</option>
+                        <option value="tanzania">France</option>
+                        <option value="tanzania">Porto </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="language">
+                        which
+                    </label>
+                    <select name="language" id="language">
+                        <option value="italic">Italic</option>
+                        <option value="German">Germany</option>
+                        <option value="French">France</option>
+                        <option value="spanish">spanish</option>
+                    </select>
+                </div>
+                <button id="add">add user</button>
+            </form>
+        </div>
+        <div class="table-side">
+            <table class="users-table" id="users-table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Id No.</th>
+                        <th>Country</th>
+                        <th>Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kangethe </td>
+                        <td>674748484</td>
+                        <td>ITALY</td>
+                        <td>Italian</td>
+                    </tr>
+                    <tr>
+                        <td>Kariuki</td>
+                        <td>63747</td>
+                        <td>Germany</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Plutonic</td>
+                        <td>28349940</td>
+                        <td>France</td>
+                        <td>French</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-    <body>
-        <h1>User Registration Management System</h1>
+    <section class="allusers">
+        <!-- users table -->
 
-        <form id="user-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="id-number">ID Number:</label>
-            <input type="text" id="id-number" name="id-number" required />
-
-            <label for="country">Country:</label>
-            <select id="country" name="country">
-        <option value="">--Select Country--</option>
-        <option value="USA">USA</option>
-        <option value="Canada">Canada</option>
-        <option value="Mexico">Mexico</option>
-      </select>
-
-            <label for="languages-spoken">Languages Spoken:</label>
-            <input type="text" id="languages-spoken" name="languages-spoken" />
-
-            <button type="submit" id="submit-btn">Register</button>
-        </form>
-
-        <table id="users-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>ID Number</th>
-                    <th>Country</th>
-                    <th>Languages Spoken</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-
-
-    </body>
+    </section>
+    <script src="user text\js\app.js"></script>
+</body>
 
 </html>
